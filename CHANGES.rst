@@ -2,7 +2,7 @@ Changelog of lizard-serious
 ===================================================
 
 
-0.1 (unreleased)
+1.0 (2012-06-20)
 ----------------
 
 - Created page for timeseries including the NEO WMS layers.

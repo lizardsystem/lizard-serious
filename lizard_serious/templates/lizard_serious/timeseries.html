@@ -1,5 +1,14 @@
 {% extends "lizard_maptree/homepage.html" %}{% load i18n %}
 
+{% block sidebar %}
+  {{ block.super }}
+  <p>
+    Bij klikken op de kaart op deze pagina wordt (als demo) van een enkel vast
+    punt alle meetgegevens getoond (september-november 2011).
+  </p>
+{% endblock sidebar %}
+
+
 {% block javascript %}
   {{ block.super }}
   <script type="text/javascript"

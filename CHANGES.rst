@@ -5,7 +5,7 @@ Changelog of lizard-serious
 0.1 (unreleased)
 ----------------
 
-- Created page for timeseries.
+- Created page for timeseries including the NEO WMS layers.
 
 - Created view for animations, added animations.
 

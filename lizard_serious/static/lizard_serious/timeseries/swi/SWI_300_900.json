@@ -4,7 +4,7 @@
         {
             "bars": {
                 "align": "center",
-                "barWidth": 86400000.0,
+                "barWidth": 1.0,
                 "show": true
             },
             "color": "blue",

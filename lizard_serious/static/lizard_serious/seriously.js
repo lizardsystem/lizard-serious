@@ -1,9 +1,9 @@
 // Javascript
 
 $(document).ready(function() {
-
     $("a.item-switcher").click(function (event) {
         event.preventDefault();
-        alert("hoi");
+        $(".switch-item").css("display", "none");
+        $($(event.currentTarget).data("switch")).css("display", "block");
     });
-}
+});

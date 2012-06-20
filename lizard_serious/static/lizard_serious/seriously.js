@@ -12,9 +12,11 @@ function serious_popup_click_handler(x, y, map) {
 }
 
 $(document).ready(function() {
-
     $("a.item-switcher").click(function (event) {
         event.preventDefault();
-        alert("hoi");
+        //$(".switch-item").css("display", "none");
+        //$($(event.currentTarget).data("switch")).css("display", "block");
+        $(".switch-item").hide("slow");
+        $($(event.currentTarget).data("switch")).show("slow");
     });
 });

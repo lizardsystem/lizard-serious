@@ -7,6 +7,6 @@ Changelog of lizard-serious
 
 - Created page for timeseries.
 
-- Created empty view.
+- Created view for animations, added animations.
 
 - Initial project structure created with nensskel 1.24.

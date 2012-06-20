@@ -1,2 +1,81 @@
 {% extends 'lizard_ui/lizardbase.html' %}
 
+{% block head-extras %}
+{{ block.super }}
+        <link rel="stylesheet"
+              href="{{ STATIC_URL }}lizard_serious/seriously.css"
+              type="text/css"
+              media="screen, projection" />
+{% endblock head-extras %}
+
+{% block javascript %}
+{{ block.super }}
+        <script type="text/javascript"
+                src="{{ STATIC_URL }}lizard_serious/seriously.js"></script>
+{% endblock javascript %}
+
+{% block sidebar %}
+<a href="#swi" class="item-switcher">
+  <h3>NEO SWI</h3>
+  <center><img src="{{ STATIC_URL }}lizard_serious/ani/swi_mini.gif" /></center>
+</a>
+<a href="#bodemvocht" class="item-switcher">
+  <h3>NEO bodemvocht</h3>
+  <center><img src="{{ STATIC_URL }}lizard_serious/ani/bodemvocht_mini.gif" /></center>
+</a>
+<a href="#bodemberging" class="item-switcher">
+  <h3>NEO bodemberging</h3>
+  <center><img src="{{ STATIC_URL }}lizard_serious/ani/bodemberging_mini.gif" /></center>
+</a>
+<a href="#biomass" class="item-switcher">
+  <h3>eLEAF Biomass</h3>
+  <center><img src="{{ STATIC_URL }}lizard_serious/ani/biomass_mini.gif" /></center>
+</a>
+<a href="#etd" class="item-switcher">
+  <h3>eLEAF ETd</h3>
+  <center><img src="{{ STATIC_URL }}lizard_serious/ani/etd_mini.gif" /></center>
+</a>
+{% endblock sidebar %}
+
+{% block content %}
+<div class="textual-content">
+
+<div id="swi" class="switch-item">
+<h2>NEO SWI</h2>
+<img src="{{ STATIC_URL }}lizard_serious/ani/swi_maxi.gif" />
+<img src="http://test-geoserver1.lizard.net/geoserver/neo/wms?service=WMS&version=1.1.0&layer=neo:NEO_DRYMON_SWI_20111130&styles=&bbox=65116.87240764078,372652.9591658034,119578.55491598336,533220.7645918117&width=33&height=12&srs=EPSG:28992&FORMAT=image%2Fpng&REQUEST=GetLegendGraphic" />
+</div>
+
+<div id="bodemvocht" class="switch-item">
+<h2>NEO bodemvocht</h2>
+<img src="{{ STATIC_URL }}lizard_serious/ani/bodemvocht_maxi.gif" />
+<img src="http://test-geoserver1.lizard.net/geoserver/neo/wms?service=WMS&version=1.1.0&layer=neo:NEO_DRYMON_bodemvocht_20111130&styles=&bbox=65116.87240764078,372652.9591658034,119578.55491598336,533220.7645918117&width=33&height=12&srs=EPSG:28992&FORMAT=image%2Fpng&REQUEST=GetLegendGraphic" />
+</div>
+
+<div id="bodemberging" class="switch-item">
+<h2>NEO bodemberging</h2>
+<img src="{{ STATIC_URL }}lizard_serious/ani/bodemberging_maxi.gif" />
+<img src="http://test-geoserver1.lizard.net/geoserver/neo/wms?service=WMS&version=1.1.0&layer=neo:NEO_DRYMON_berging_20111130&styles=&bbox=65116.87240764078,372652.9591658034,119578.55491598336,533220.7645918117&width=33&height=12&srs=EPSG:28992&FORMAT=image%2Fpng&REQUEST=GetLegendGraphic" />
+</div>
+
+<div id="biomass" class="switch-item">
+<h2>eLEAF Biomass</h2>
+<img src="{{ STATIC_URL }}lizard_serious/ani/biomass_maxi.gif" />
+<img src="http://test-geoserver1.lizard.net/geoserver/eleaf/wms?service=WMS&version=1.1.0&layer=eleaf:Biomass_week23&styles=&bbox=65116.87240764078,372652.9591658034,119578.55491598336,533220.7645918117&width=33&height=12&srs=EPSG:28992&FORMAT=image%2Fpng&REQUEST=GetLegendGraphic" />
+</div>
+
+<div id="etd" class="switch-item">
+<h2>eLEAF ETd</h2>
+<img src="{{ STATIC_URL }}lizard_serious/ani/etd_maxi.gif" />
+<img src="http://test-geoserver1.lizard.net/geoserver/eleaf/wms?service=WMS&version=1.1.0&layer=eleaf:ETd_week23&styles=&bbox=65116.87240764078,372652.9591658034,119578.55491598336,533220.7645918117&width=33&height=12&srs=EPSG:28992&FORMAT=image%2Fpng&REQUEST=GetLegendGraphic" />
+</div>
+
+</div>
+{% endblock content %}
+
+Put scrap here
+<img src="{{ STATIC_URL }}lizard_serious/ani/biomass.gif" />
+<img src="{{ STATIC_URL }}lizard_serious/ani/etd.gif" />
+
+
+<img src="http://test-geoserver1.lizard.net/geoserver/eleaf/wms?service=WMS&version=1.1.0&layer=eleaf:Biomass_week23&styles=&bbox=65116.87240764078,372652.9591658034,119578.55491598336,533220.7645918117&width=73&height=12&srs=EPSG:28992&FORMAT=image%2Fpng&REQUEST=GetLegendGraphic" />

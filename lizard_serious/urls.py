@@ -6,6 +6,7 @@ from django.contrib import admin
 
 from lizard_ui.urls import debugmode_urlpatterns
 from lizard_serious.views import SeriousView
+from lizard_serious.views import TimeseriesView
 
 admin.autodiscover()
 
@@ -14,6 +15,9 @@ urlpatterns = patterns(
     '',
     url(r'^$',
         SeriousView.as_view(),
+        name='lizard_serious_homepage'),
+    url(r'^timeseries/$',
+        TimeseriesView.as_view(),
         name='lizard_serious_homepage'),
     url(r'^admin/', include(admin.site.urls)),
     # url(r'^something/',

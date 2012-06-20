@@ -1,2 +1,7 @@
 {% extends "lizard_maptree/homepage.html" %}{% load i18n %}
 
+{% block javascript %}
+  {{ block.super }}
+  <script type="text/javascript"
+          src="{{ STATIC_URL }}lizard_serious/seriously.js"></script>
+{% endblock javascript %}
